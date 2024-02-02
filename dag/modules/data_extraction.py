@@ -14,11 +14,11 @@ df = pd.json_normalize(data)
 # Dataframe information
 print(df.info())
 
-mysql_username = 'root'
-mysql_password = 'password'
-mysql_host = 'mysql'
-mysql_port = '3306'
-mysql_database = 'my-db'
+mysql_username = '<your_username>'
+mysql_password = '<your_password>'
+mysql_host = '<your_host>'
+mysql_port = '<your_port>'
+mysql_database = '<your_database>'
 
 mysql_conn_string = f"mysql+mysqlconnector://{mysql_username}:{mysql_password}@{mysql_host}:{mysql_port}/{mysql_database}"
 engine_mysql = create_engine(mysql_conn_string)
